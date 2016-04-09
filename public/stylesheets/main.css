@@ -28,6 +28,21 @@ main {
   width: 630px;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-container img{
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.image-container img:hover {
+  opacity: 1;
+}
+
 .content {
   padding: 10px;
   margin: auto;
