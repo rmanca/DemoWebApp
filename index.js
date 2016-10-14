@@ -17,13 +17,10 @@ app.get('/contact', function(request, response) {
   response.render('pages/contact');
 });
 
-app.get('/photos', function(request, response) {
-  response.render('pages/photos');
+app.get('/resume', function(request, response) {
+  response.render('pages/resume');
 });
 
-app.get('/about', function(request, response) {
-  response.render('pages/about');
-});
 app.get('/projects', function(request, response) {
   response.render('pages/projects');
 });
