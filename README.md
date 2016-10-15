@@ -29,6 +29,6 @@ When you make some changes, remember to commit and push them up to master. Once 
 3. Replace my bio with yours in `views/pages/index.ejs`. Maybe even insert a photo!
 4. Add another project to my projects page! Just copy and paste the chunk of code within the `<div class="general-container projects-container">` tag and change the text/image!
 5. Do you have Instagram? Facebook? Find the [FontAwesome icon of your choice](http://fontawesome.io/icons/) and add a link to whatever account you want in the contacts page (also maybe change the other links too lol)
-6. Do you have hobbies? Maybe you're into photography? Add another tab to the nav! There are several steps here: (1) add another `.ejs` file to `views/pages`, (2) set up the route in `index.js` (3) add it to the `views/partials/nav.ejs` file (4) restart node (ctrl+c to kill it from your terminal, `heroku local web` to start it back up)!
+6. Do you have hobbies? Maybe you're into photography? Add another tab to the nav! There are several steps here: (1) add another `.ejs` file to `views/pages`, (2) set up the route in `index.js` (3) add it to the `views/partials/nav.ejs` file (4) restart node (ctrl+c to kill it from your terminal, `heroku local web` to start it back up)
 
 Good luck, ask for help, and google away!
