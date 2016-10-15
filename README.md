@@ -12,8 +12,8 @@ If you're going to use Bootstrap, don't forget to add the script tag in your `<h
 ## Node Routing
 [Node routing](http://expressjs.com/en/guide/routing.html) is how I switch between pages when clicking on the navigation tabs. My routes live in `index.js`. Don't forget to restart your server whenever you make any changes to the `index.js` server file, else nothing you do will be picked up when you're running locally.
 
-## Node Routing / EJS Templates
-If you don't want to rewrite the same code in multiple files (eg. a header, nav, or footer), templating is gonna be your best friend. I wrote a footer, header, and nav in `views/partials` and they get injected into my pages (in `views/pages`) by writing `<% include ../partials/header %>`. [Here](https://scotch.io/tutorials/use-ejs-to-template-your-node-application) is a tutorial I found helpful for ejs partials/templates to help with reusable code.
+## EJS Templates
+If you don't want to rewrite the same code in multiple files (eg. a header, nav, or footer), templating is gonna be your best friend. EJS is a templating language (there are many) that looks pretty similar to normal html, but there are a few extra things you can do. I wrote a footer, header, and nav in `views/partials` and they get injected into my pages (in `views/pages`) by writing `<% include ../partials/header %>`. [Here](https://scotch.io/tutorials/use-ejs-to-template-your-node-application) is a tutorial I found helpful for ejs partials/templates to help with reusable code.
 
 ## Other helpful things
 If you're looking for some boss fonts, check out [Google Fonts](https://fonts.google.com/), where you can browse around for some free ones and then just insert the script tag in your `<head>` of the ones that you like (mine lives in `views/partials/header.ejs`). 
@@ -25,10 +25,10 @@ When you make some changes, remember to commit and push them up to master. Once 
 
 ## Simple first steps
 1. Go to `views/partials/header.ejs` and replace my name with yours so it appears in the title of tab.
-2. Find some cool [Google Fonts](https://fonts.google.com/) and replace `Rubik` and `Open+Sans` with whatever you like best (also in `views/partials/header.ejs`) to import them, and change them in the css file (`public/stylesheets/main.css`) to see them on the different parts of the app. `jumbotron` is what I called the big title on each page, and `body` is everything else.
+2. Find some cool [Google Fonts](https://fonts.google.com/) and replace `Rubik` and `Open+Sans` with whatever you like best (also in `views/partials/header.ejs`) to import them, and change them in the css file (`public/stylesheets/main.css`) to see them on the different parts of the app. `jumbotron` is the big title on each page, and `body` is everything else.
 3. Replace my bio with yours in `views/pages/index.ejs`. Maybe even insert a photo!
 4. Add another project to my projects page! Just copy and paste the chunk of code within the `<div class="general-container projects-container">` tag and change the text/image!
 5. Do you have Instagram? Facebook? Find the [FontAwesome icon of your choice](http://fontawesome.io/icons/) and add a link to whatever account you want in the contacts page (also maybe change the other links too lol)
-6. Do you have hobbies? Maybe you do photography? Add another tab to the nav! There are several steps here: (1) add another `.ejs` file to `views/pages`, (2) set up the route in `index.js` (3) add it to the `views/partials/nav.ejs` file (4) restart node!
+6. Do you have hobbies? Maybe you're into photography? Add another tab to the nav! There are several steps here: (1) add another `.ejs` file to `views/pages`, (2) set up the route in `index.js` (3) add it to the `views/partials/nav.ejs` file (4) restart node (ctrl+c to kill it from your terminal, `heroku local web` to start it back up)!
 
 Good luck, ask for help, and google away!
